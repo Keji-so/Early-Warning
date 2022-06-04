@@ -1,0 +1,206 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@font-face {
+  font-family: 'HK Grotesk';
+  src: url('./font/HKGrotesk-Regular.otf') format('opentype'),
+       url('./font/HKGrotesk-Bold.otf') format('opentype'),
+       url('./font/HKGrotesk-SemiBold.otf') format('opentype');
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'HK Grotesk';
+  background-color: #efeeee;
+  padding-bottom: 30px;
+}
+
+nav {
+  padding: 3vw 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-block {
+  display: flex;
+  align-items: center;
+}
+
+.logo-name {
+  font-size: 28px;
+  letter-spacing: -1.5px;
+}
+
+.logo {
+  width: 35px;
+  height: 35px;
+  object-position: center;
+  object-fit: cover;
+  margin-right: 5px;
+}
+
+.projects {
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.projects:hover {
+  color: red;
+}
+
+.main-block {
+  padding: 2vw 10vw;
+}
+
+.main {
+  border-right: 5px solid #000;
+  border-bottom: 5px solid #000;
+  background-color: #fff;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+}
+
+.creators, .about {
+  padding: 3vw;
+}
+
+.creators-block {
+  position: sticky;
+  top: 0;
+  border-top: 5px solid #000;
+  border-left: 0;
+  flex-grow: 1;
+}
+
+
+.about {
+  width: 65%;
+  border: 5px solid #000;
+  border-bottom: 0;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.heading {
+  font-weight: 700px;
+}
+
+.sub-section {
+  margin-top: 30px;
+}
+
+.creators-list li {
+  list-style: none;
+  margin-left: 5px;
+  font-size: 20px;
+  line-height: 40px;
+  text-decoration: underline; 
+}
+
+.manifesto-content {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.structure-list {
+   margin-top: 10px;
+   margin-left: 30px;
+}
+
+.note {
+  font-size: 13px;
+}
+
+.footer {
+  padding: 1vw 10vw;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-block {
+  padding: 2vw 6vw;
+}
+
+.footer {
+  padding: 1vw 6vw;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    border: 0;
+    display: block;
+}
+
+body {
+  background-color: #fff;
+}
+
+.logo-name {
+  font-size: 25px;
+}
+
+.main-block {
+  padding: 2vw 0;
+}
+
+.creators, .about {
+  padding: 30px;
+}
+
+.creators-block {
+  border-top: 2px solid #000;
+  padding: 0 20px 0 20px;
+}
+
+.manifesto-content {
+  line-height: 36px;
+}
+
+.about {
+  width: 100%;
+  border: 0;
+  border.bottom: 5px solid #000;
+}
+
+nav {
+  padding: 40px 30px;
+}
+
+.footer {
+  padding: 1vw 50px;
+}
+
+.footer-text {
+  margin-bottom: 10px;
+}
+}
+
+@media only screen and (max-width: 425px) {
+      .logo {
+          width: 28px;
+          height: 28px;
+          margin-right: 2px;
+}
+
+.logo-name {
+  font-size: 22px;
+  letter-spacing: -1.8px;
+}
+}
